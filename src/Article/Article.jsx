@@ -4,6 +4,7 @@ import "./index.css";
 const Article = () => {
   return (
     <div class="contianer">
+      <meta name="selected-link" value="repo_source" data-pjax-transient></meta>
       <h2>The Statue of Liberty's torch heads to new museum </h2>
       <p>
         <div>
