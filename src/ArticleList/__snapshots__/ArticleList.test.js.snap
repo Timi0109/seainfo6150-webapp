@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList tests renders correctly 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <section>
+      <div>
+        You have no data!
+      </div>
+    </section>
+  </div>
+</div>
+`;

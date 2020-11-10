@@ -32,7 +32,6 @@ const ArticleListItem = ({ articles }) => {
                 onClick={() => handleClick(id)}
                 buttonText={btnState[id] ? "Show Less" : "Show More"}
               ></ArticleTextToggleButton>
-              
           </div>
 
         })}
@@ -45,6 +44,7 @@ const ArticleListItem = ({ articles }) => {
   return (
     <section>
       {displayContent}
+     
     </section>
   );
   //   return <div>h</div>;

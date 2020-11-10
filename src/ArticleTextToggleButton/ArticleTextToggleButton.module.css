@@ -6,3 +6,9 @@ button {
   font-size: 15px;
   width: 96%;
 }
+@media (max-width: 900px){
+  button{
+    background-color:  rgb(40, 92, 204);
+    color: white;
+  }
+}
