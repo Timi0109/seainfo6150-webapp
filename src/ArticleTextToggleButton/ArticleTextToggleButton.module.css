@@ -1,11 +1,13 @@
 button {
-  border-radius: 10%;
-  background-color: rgb(197, 10, 10);
+  position: absolute;
+  border-radius: 8px;
+  background-color: rgb(219, 28, 28);
   height: 35px;
   color: white;
   font-size: 15px;
   width: 96%;
 }
+
 @media (max-width: 900px){
   button{
     background-color:  rgb(40, 92, 204);

@@ -12,8 +12,8 @@ h1 {
   background: red;
 }
 
-.content {
-  height: 200px;
+.container > .content {
+  height: 400px;
   padding-left: 10px;
   border: 2px solid;
   border-radius: 25px;
@@ -23,6 +23,7 @@ h1 {
   margin: 10px;
   width: 30%;
   position: relative;
+  border-color: rgb(197, 10, 10);
 }
 .info {
   height: 100px;
@@ -45,4 +46,14 @@ h1 {
     
   }
   
+}
+
+p{
+  font-size: 12px;
+}
+
+.btn{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 }

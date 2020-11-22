@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FunctionalComponent tests renders correctly 1`] = `
+<div>
+  <div>
+    <img />
+    <h2 />
+  </div>
+</div>
+`;
+
+exports[`FunctionalComponent tests renders correctly when passed a name prop 1`] = `
+<div>
+  <div>
+    <img
+      src="https://cdn.cnn.com/cnnnext/dam/assets/181122102925-statue-of-liberty-crown-super-169.jpg"
+    />
+    <h2>
+      The Statue of Liberty's torch heads to new museum
+    </h2>
+  </div>
+</div>
+`;

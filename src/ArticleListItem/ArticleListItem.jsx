@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArticleImage from "../ArticleImage/ArticleImage";
 import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton";
 import styles from "./ArticleListItem.module.css";
 
@@ -20,18 +21,19 @@ const ArticleListItem = ({ articles }) => {
       <div className={styles.container}>
         {keys.map((item, id) => {
            return <div key={id} className={styles.content}>
-             <div className={styles.info}>
-              <h1>{articles[item].title}</h1>
-              <p>{btnState[id] ? articles[item].shortText : null}</p>
-              <p className={styles.date}>
-                {btnState[id] ? articles[item].displayDate : null}
-              </p>
-              </div>
-              <ArticleTextToggleButton
-              className={styles.btnContainer}
-                onClick={() => handleClick(id)}
-                buttonText={btnState[id] ? "Show Less" : "Show More"}
-              ></ArticleTextToggleButton>
+              <ArticleImage url={articles[item].image._url} title={articles[item].title}></ArticleImage>
+              <div className={styles.info}>
+                  <p>{btnState[id] ? articles[item].shortText : null}</p>
+                  <p className={styles.date}>
+                    {btnState[id] ? articles[item].displayDate : null}
+                  </p>
+                </div>
+                <div className={styles.btn}>
+                  <ArticleTextToggleButton
+                    onClick={() => handleClick(id)}
+                    buttonText={btnState[id] ? "Show Less" : "Show More"}
+                  ></ArticleTextToggleButton>
+                </div>
           </div>
 
         })}
